@@ -1,4 +1,4 @@
-if not game:IsLoaded() then
+﻿if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
@@ -150,13 +150,13 @@ local xDTaraZ = setmetatable({}, {
 })
 
 xDTaraZ.Config = {
-    UiSource = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/ui.lua",
+    UiSource = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/ui.lua",
     Discord = "https://discord.gg/FHVfmeSceA",
     UpdateLog = {
         { "2026-10-05", "Added Rebirth Stats: auto spend points on the stat you pick\nAdded Reset Stats with Reset Token\nAdded auto use of gamepass items" },
         { "2026-10-03", "Classic Mario Hub UI is back\nBetter executor support\nAuto Roll stops at full storage\nFixed Group Reward\nImproved Fast Roll" },
     },
-    ReloadSource = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua"))()',
+    ReloadSource = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/loader.lua"))()',
     RejoinDelay = 5,
     RejoinRetry = 30,
     WebhookColor = 0xE8A04C,

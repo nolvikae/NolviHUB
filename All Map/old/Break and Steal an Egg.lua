@@ -1,4 +1,4 @@
-if not game:IsLoaded() then
+﻿if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
@@ -153,7 +153,7 @@ xDTaraZ.Config = {
     UpdateLog = {
         { "2026-10-03", "Classic Mario Hub UI is back\nBetter executor support\nNew Auto Upgrade system\nFixed stealing & movement" },
     },
-    UiSource = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/ui.lua",
+    UiSource = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/ui.lua",
     SaveFolder = "Break and Steal an Egg",
     LoadTimeout = 30,
     RequireTimeout = 3,

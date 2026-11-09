@@ -1,8 +1,8 @@
-if not game:IsLoaded() then
+﻿if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-local BASE = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/All%20Map/"
+local BASE = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/All%20Map/"
 local OLD_BASE = BASE .. "old/"
 local DISCORD = "discord.gg/FHVfmeSceA"
 

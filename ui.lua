@@ -1,4 +1,4 @@
--- Mario Hub UI · standalone build 2026-10-14
+﻿-- Mario Hub UI · standalone build 2026-10-14
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -25,8 +25,8 @@ local Config = {
     AssetDir = "mariohub/assets",
     ConfigRoot = "mariohub/configs",
     DefaultAssets = {
-        logo = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/main/logo.png",
-        logo_halloween = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/main/logo_halloween.png",
+        logo = "https://raw.githubusercontent.com/nolvikae/NolviHUB/main/logo.png",
+        logo_halloween = "https://raw.githubusercontent.com/nolvikae/NolviHUB/main/logo_halloween.png",
     },
     SeasonTheme = "Halloween",
     FontDir = "mariohub/fonts",

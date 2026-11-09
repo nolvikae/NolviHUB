@@ -1,4 +1,4 @@
-if not game:IsLoaded() then
+﻿if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
@@ -165,9 +165,9 @@ xDTaraZ.Config = {
         { "2026-10-19", "Halloween, Pipelined Farm Engine & Multi-Tier Pool\n• Auto Farm: Low-overhead pipelined batch pickup & multi-slot placement\n• Network Acceleration [OP]: RakNet Insane Instant Farm, Remote Quarry Refill & Wire-Speed Packet Burst\n• Halloween & Economy: Dual-currency upgrades (Candy Corn & Coins) with icons, Secret Codes\n• Waters of Nu: Multi-tier detection (Basic, Silver, Gold, Void, Haunted, Cursed)\n• Pet Suite: Native Equip Best, Exclusive-safe Auto-Delete & Auto-Lock Rares\n• World Travel & POIs: Halloween Portal, Sun Shrine, Event Sign, Jack NPC\n• OP Exploits: Zero-lag PromptShown Instant Prompts, Anti-Hazard & Fast Hold" },
         { "2026-10-13", "Smart Progression and faster Auto Farm\nPets, hatching limits and full ESP\nAuto Skip Cutscene and Spectate\nFixed pool training, respawn and camera recovery\nImproved upgrade guards, rejoin and cleanup" },
     },
-    UiSource = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/ui.lua",
+    UiSource = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/ui.lua",
     ReloadSource = [[
-local url = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua"
+local url = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/loader.lua"
 local ok, body = pcall(game.HttpGet, game, url)
 if not (ok and type(body) == "string") then
     local requester = request or http_request or (syn and syn.request) or (http and http.request)

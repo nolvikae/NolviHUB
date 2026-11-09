@@ -1,4 +1,4 @@
-if not game:IsLoaded() then
+﻿if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
@@ -151,7 +151,7 @@ xDTaraZ.Config = {
         { "2026-10-05", "Auto Pickaxe, Auto Potion, Spin Wheel and Season Pass\nEvent pickups, Fullbright, Teleport and Server Hop\nAuto Sell Brainrots fixed, bigger status panel" },
         { "2026-10-03", "Classic Mario Hub UI is back\nBetter executor support\nAuto Loot stops when full\nAuto-detect Upgrades" },
     },
-    UiSource = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/ui.lua",
+    UiSource = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/ui.lua",
     ServerList = "https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100",
     SaveFolder = "Open Sea For Animals",
     LoadTimeout = 10,

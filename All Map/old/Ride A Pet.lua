@@ -1,4 +1,4 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
+﻿if not game:IsLoaded() then game.Loaded:Wait() end
 if game.GameId ~= 10035204815 then game:GetService("Players").LocalPlayer:Kick("Mario Hub: this script is for Ride A Pet only") return end
 
 do
@@ -38,7 +38,7 @@ xDTaraZ.Config = {
     Tag = "[RideAPet]",
 
     Discord = "https://discord.gg/FHVfmeSceA",
-    UiSource = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/ui.lua",
+    UiSource = "https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/ui.lua",
     LoadTimeout = 10, GameLibDeadline = 8,
     AlertTries = 8, AlertGap = 1.5, WarnGap = 5,
 
@@ -7641,7 +7641,7 @@ do
         ReconnectDelay = 5, ReconnectRetry = 10, ReconnectTries = 6, ReconnectMax = 3, ReconnectWindow = 600,
         ReconnectFile = "MarioHub_RideAPet_reconnect.txt",
         HopPick = 15, ServerListUrl = "https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Asc&limit=100",
-        ReloadSource = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua"))()',
+        ReloadSource = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/nolvikae/NolviHUB/refs/heads/main/loader.lua"))()',
         RarityColors = {
             Common = Color3.fromRGB(200, 200, 200), Rare = Color3.fromRGB(90, 170, 255), Epic = Color3.fromRGB(190, 110, 255),
             Legendary = Color3.fromRGB(255, 200, 60), Mythic = Color3.fromRGB(255, 90, 90), Divine = Color3.fromRGB(120, 255, 220),
@@ -8619,7 +8619,7 @@ do
     local defaults = {
         WebhookPattern = "^https://[%w%.]*discord[app]*%.com/api/webhooks/%d+/[%w_%-]+$",
         WebhookGap = 1.2, WebhookQueueMax = 20,
-        WebhookLogo = "https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/main/logo.png",
+        WebhookLogo = "https://raw.githubusercontent.com/nolvikae/NolviHUB/main/logo.png",
         WebhookAvatarApi = "https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=%d&size=150x150&format=Png",
         WebhookIcons = { Egg = "🥚", Server = "📡", Magma = "🌋", Pet = "🐾", Rebirth = "♻️", Kick = "⚠️", Report = "📊", Test = "✅", Fail = "🛑" },
         WebhookColors = { Egg = 0xE8A04C, Pet = 0x7DD87D, Magma = 0xFF5A2A, Server = 0xFF82E6, Rebirth = 0x5AB4FF, Kick = 0xE04848, Report = 0x9AA4B0, Test = 0xE8A04C, Fail = 0xE04848 },
