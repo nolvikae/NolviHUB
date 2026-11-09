@@ -1,4 +1,4 @@
-﻿-- Mario Hub UI · standalone build 2026-10-14
+-- Mario Hub UI · standalone build 2026-10-14
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")

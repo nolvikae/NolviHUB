@@ -1,4 +1,4 @@
-﻿if not game:IsLoaded() then game.Loaded:Wait() end
+if not game:IsLoaded() then game.Loaded:Wait() end
 if game.GameId ~= 10035204815 then game:GetService("Players").LocalPlayer:Kick("Mario Hub: this script is for Ride A Pet only") return end
 
 do

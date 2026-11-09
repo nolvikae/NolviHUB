@@ -1,4 +1,4 @@
-﻿-- Mario Hub UI V2 · made by xDTaraZ · discord.gg/FHVfmeSceA
+-- Mario Hub UI V2 · made by xDTaraZ · discord.gg/FHVfmeSceA
 -- (c) xDTaraZ. Do not reupload or rebrand without credit. build 2026-10-03
 ---@author xDTaraZ  Mario Hub UI V2
 local TweenService = game:GetService("TweenService")
