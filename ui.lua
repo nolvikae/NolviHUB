@@ -27,6 +27,7 @@ local Config = {
     DefaultAssets = {
         logo = "https://raw.githubusercontent.com/nolvikae/NolviHUB/main/logo.png",
         logo_halloween = "https://raw.githubusercontent.com/nolvikae/NolviHUB/main/logo_halloween.png",
+        logo_french = "https://raw.githubusercontent.com/nolvikae/NolviHUB/main/logo_french.png",
     },
     SeasonTheme = "Halloween",
     FontDir = "mariohub/fonts",
@@ -222,7 +223,7 @@ local Themes = {
         Outline = "002395", Shadow = "B9C9DD", Text = "1A2B3C", SubText = "4A6B8C", Muted = "8FA8C4", Track = "C9D6E4",
         Cloud = "FFFFFF", CloudAlpha = 0.15, Accent = "0055A4", AccentDark = "002395", Grass = "CE1126", GrassDark = "A8001E", Brick = "EF4135", BrickDark = "C41C2E", Decor = { "Clouds", "✦", "EF4135" },
         Particle = { "✦", false, "CE1126" },
-        Glow = "0055A4", Fog = "002395", Logo = "logo",
+        Glow = "0055A4", Fog = "002395", Logo = "logo_french",
     }),
     Shared = Palette({
         Accent = "D64C40", AccentDark = "A0342C", OnAccent = "FFFFFF", Danger = "D64C40", DangerDark = "A0342C",
@@ -6216,7 +6217,7 @@ function Window:BuildLanguagePill(parent)
     local pill = Draw.Box("Frame", { Size = UDim2.fromOffset(74, 28), LayoutOrder = 1, Parent = parent }, "Shadow", "Outline", UDim.new(1, 0), 2)
     pill.BackgroundTransparency = 0.35
     local segments = {}
-    for index, code in ipairs({ "EN", "TH" }) do
+    for index, code in ipairs({ "EN", "FR", "TH" }) do
         local segment = Draw.Box("TextButton", { Position = UDim2.new((index - 1) * 0.5, 2, 0, 2), Size = UDim2.new(0.5, -4, 1, -4), Parent = pill }, "Coin", nil, UDim.new(1, 0))
         local label = Draw.Text({ Text = code, Size = UDim2.fromScale(1, 1), TextXAlignment = Enum.TextXAlignment.Center, Parent = segment }, "Body", 13, "White")
         segment.Activated:Connect(function()
