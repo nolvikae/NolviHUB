@@ -91,6 +91,7 @@ if not source then
     return
 end
 
+if source:sub(1, 3) == "\xEF\xBB\xBF" then source = source:sub(4) end
 local chunk, compileErr = loadstring(source)
 if not chunk then
     Notify(name .. " failed to load on this executor: " .. tostring(compileErr) .. ". Ask in " .. DISCORD)
