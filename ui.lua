@@ -118,7 +118,7 @@ local function Palette(spec)
 end
 
 local Themes = {
-    Order = { "Overworld", "France", "Halloween", "Light", "Dark", "Underground", "Castle", "Ghost House", "Star Road", "Desert", "Ice Land", "Jungle", "Sky World" },
+    Order = { "France" },
     Overworld = Palette({
         Backdrop = "C4D6EC", BackdropAlt = "E2E9F2", Topbar = "7092CC", Sidebar = "96563E", SidebarAlt = "804834",
         SidebarText = "FCF2E6", SidebarMuted = "E2C4B0", TabActive = "FAF4E9", TabActiveText = "B84034",
@@ -243,7 +243,7 @@ local State = {
     Binding = nil,
     MenuKey = "LeftControl",
     ThemeName = "Overworld",
-    Language = "EN",
+    Language = "FR",
     UserScale = 1,
     Touch = false,
     KeyPickers = {},
@@ -6217,7 +6217,7 @@ function Window:BuildLanguagePill(parent)
     local pill = Draw.Box("Frame", { Size = UDim2.fromOffset(74, 28), LayoutOrder = 1, Parent = parent }, "Shadow", "Outline", UDim.new(1, 0), 2)
     pill.BackgroundTransparency = 0.35
     local segments = {}
-    for index, code in ipairs({ "EN", "FR", "TH" }) do
+    for index, code in ipairs({ "FR" }) do
         local segment = Draw.Box("TextButton", { Position = UDim2.new((index - 1) * 0.5, 2, 0, 2), Size = UDim2.new(0.5, -4, 1, -4), Parent = pill }, "Coin", nil, UDim.new(1, 0))
         local label = Draw.Text({ Text = code, Size = UDim2.fromScale(1, 1), TextXAlignment = Enum.TextXAlignment.Center, Parent = segment }, "Body", 13, "White")
         segment.Activated:Connect(function()
@@ -8601,11 +8601,10 @@ function Window:AddSettingsTab()
     local interface = tab:AddLeftGroupbox(Lang.Strings.Interface, "mushroom")
     interface:AddDropdown("MarioLanguage", {
         Text = Lang.Strings.Language,
-        Values = { "English", "Français", "ไทย" },
-        Default = State.Language == "TH" and "ไทย" or State.Language == "FR" and "Français" or "English",
-        Callback = function(value)
-            local code = value == "ไทย" and "TH" or value == "Français" and "FR" or "EN"
-            Library:SetLanguage(code)
+        Values = { "Français" },
+        Default = "Français",
+        Callback = function()
+            Library:SetLanguage("FR")
         end,
     })
     interface:AddDropdown("MarioTheme", { Text = Lang.Strings.ThemeName, Values = Themes.Order, Default = State.ThemeName, Callback = function(name)
