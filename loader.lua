@@ -91,7 +91,8 @@ if not source then
     return
 end
 
-if source:sub(1, 3) == "\xEF\xBB\xBF" then source = source:sub(4) end
+if source:sub(1, 3) == "\xEF\xBB\xBF" then source = source:sub(4) end
+if type(source) == "string" then while true do local b1,b2,b3 = source:byte(1,3) if b1 == 0xEF and b2 == 0xBB and b3 == 0xBF then source = source:sub(4) elseif b1 and b1 < 0x20 then source = source:sub(2) else break end end end
 local chunk, compileErr = loadstring(source)
 if not chunk then
     Notify(name .. " failed to load on this executor: " .. tostring(compileErr) .. ". Ask in " .. DISCORD)
